@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="icon" href="favicon.png  " />
+    <title>Restaurant Tacos</title>
+  </head>
+  <body>
+    <header>
+      <a href="Index.html">
+        <img src="img/Taco-logo.png" alt="Restaurant Tacos" />
+      </a>
+
+      <nav class="mobileVisible">
+        <img src="img/burger-bar.png" alt="burger" />
+      </nav>
+
+      <nav class="mobileHidden">
+        <ul>
+          <li><a href="Index.html">Acceuil</a></li>
+          <li><a href="Reservation.html" class="selected">Réservation</a></li>
+          <li><a href="Restaurant.html">Restaurant</a></li>
+          <li><a href="Commande.html" class="styleOrderBtn">Ma Commande</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Réservation</h1>
+      <form action="Reservation-confirmation.html">
+        <div class="gridReservation">
+          <div>
+            <label for="nameForReservation">Nom complet </label>
+            <input
+              type="text"
+              id="nameForReservation"
+              name="firstNameForReservation"
+              placeholder="Prénom *"
+              required
+            />
+            <input
+              type="text"
+              id="nameForReservation"
+              name="lastNameForReservation"
+              placeholder="Nom *"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="contact">Pour vous joindre </label>
+            <input
+              type="tel"
+              name="phone"
+              id="contact"
+              placeholder="Téléphone *"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="contact"
+              placeholder="Courielle"
+            />
+          </div>
+
+          <div>
+            <label for="howMany">Nombre de personne* </label>
+            <input
+              type="number"
+              name="howMany"
+              id="howMany"
+              min="1"
+              max="10"
+              placeholder="Combien serez-vous ?"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="dateForReservation">Date de la réservation* : </label>
+            <input
+              type="date"
+              name="dateForReservation"
+              id="dateForReservation"
+              placeholder="Date de la réservation"
+            />
+          </div>
+
+          <div>
+            <label for="placeToEat">Ou voulez-vous manger ?*</label>
+            <select name="placeToEat" id="placeToEat">
+              <option value="inside">Salle à manger</option>
+              <option value="outside">Terrasse</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="hourToEat">Heure de la réservation* :</label>
+            <select name="hourToEat" id="hourToEat">
+              <option value="select" disabled selected="select">
+                Selectionné une heure
+              </option>
+              <option value="12:00">12h00</option>
+              <option value="12:30">12h30</option>
+              <option value="13:00">13h00</option>
+              <option value="13:30">13h30</option>
+              <option value="17:00">17h00</option>
+              <option value="17:30">17h30</option>
+              <option value="18:00">18h00</option>
+              <option value="18:30">18h30</option>
+              <option value="19:00">19h00</option>
+              <option value="19:30">19h30</option>
+              <option value="20:00">20h00</option>
+              <option value="20:30">20h30</option>
+              <option value="21:00">21h00</option>
+            </select>
+          </div>
+
+          <div class="gridItemComment">
+            <label for="comment">Commantaire suppémentaire : </label>
+            <input type="text" name="comment" id="comment" />
+          </div>
+
+          <div class="gridItemInfo">
+            <label for="info">S'inscrire a notre infolettre : </label>
+            <input type="checkbox" name="info" id="info" />
+          </div>
+
+          <div class="gridItemSubmit">
+            <input type="submit" value="Soumettre" />
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer class="container">
+      <div class="footerTopDiv">
+        <p>Réalisé par : Lucas Minville</p>
+        <p class="mobileHidden">
+          Résaux Sociaux:
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            ><img src="img/facebook.png" alt="facebook Icon"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            ><img src="img/linkedin.png" alt="linkedin Icon"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            ><img src="img/twitter.png" alt="twitter Icon"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            ><img src="img/instagram.png" alt="instagram .Icon"
+          /></a>
+        </p>
+      </div>
+      <div>
+        <p>Intégration Web 1</p>
+        <p class="mobileHidden">Cégep de Trois-Rivière. Hiver 2025.</p>
+      </div>
+    </footer>
+  </body>
+</html>

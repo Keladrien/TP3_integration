@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="icon" href="favicon.png  " />
+    <title>Restaurant Tacos</title>
+  </head>
+  <body>
+    <header>
+      <a href="Index.html">
+        <img src="img/Taco-logo.png" alt="Restaurant Tacos" />
+      </a>
+
+      <nav class="mobileVisible">
+        <img src="img/burger-bar.png" alt="burger" />
+      </nav>
+
+      <nav class="mobileHidden">
+        <ul>
+          <li><a href="Index.html">Acceuil</a></li>
+          <li><a href="Reservation.html">Réservation</a></li>
+          <li><a href="Restaurant.html">Restaurant</a></li>
+          <li>
+            <a href="Commande.html" class="selected styleOrderBtn"
+              >Ma Commande</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Ma commande</h1>
+      <form action="">
+        <div class="flexOrder">
+          <div class="flexOrderItemChoice">
+            <table>
+              <tr>
+                <th><h2>Entrée</h2></th>
+              </tr>
+
+              <tr>
+                <th>Nom du plat</th>
+                <th>Prix</th>
+                <th>Quantité</th>
+              </tr>
+
+              <tr>
+                <td>Chili</td>
+                <td>3.50$</td>
+                <td>
+                  <label for="chili"></label>
+                  <input
+                    type="number"
+                    id="chili"
+                    name="chili"
+                    min="0"
+                    value="0"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>Nachos</td>
+                <td>12.99$</td>
+                <td>
+                  <label for="nachos"></label>
+                  <input
+                    type="number"
+                    id="nachos"
+                    name="nachos"
+                    min="0"
+                    value="0"
+                  />
+                </td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <th><h2>Plat Principaux</h2></th>
+              </tr>
+
+              <tr>
+                <th>Nom du plat</th>
+                <th>Prix</th>
+                <th>Quantité</th>
+              </tr>
+
+              <tr>
+                <td>Tacos souple au boeuf</td>
+                <td>4.99$</td>
+                <td>
+                  <label for="beefTacos"></label>
+                  <input
+                    type="number"
+                    id="beefTacos"
+                    name="beefTacos"
+                    min="0"
+                    value="0"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>Fajitas au poulet</td>
+                <td>4.99$</td>
+                <td>
+                  <label for="chickenFajitas"></label>
+                  <input
+                    type="number"
+                    id="chickenFajitas"
+                    name="chickenFajitas"
+                    min="0"
+                    value="0"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>Burrios au boeuf</td>
+                <td>4.99$</td>
+                <td>
+                  <label for="beefBurritos"></label>
+                  <input
+                    type="number"
+                    id="beefBurritos"
+                    name="beefBurritos"
+                    min="0"
+                    value="0"
+                  />
+                </td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <th><h2>Dessert</h2></th>
+              </tr>
+
+              <tr>
+                <th>Nom du plat</th>
+                <th>Prix</th>
+                <th>Quantité</th>
+              </tr>
+
+              <tr>
+                <td>Churros (2x)</td>
+                <td>3.50$</td>
+                <td>
+                  <label for="churrosTwo"></label>
+                  <input
+                    type="number"
+                    id="churrosTwo"
+                    name="churrosTwo"
+                    min="0"
+                    value="0"
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>Boite de 10 churros</td>
+                <td>17.99$</td>
+                <td>
+                  <label for="churrosTen"></label>
+                  <input
+                    type="number"
+                    id="churrosTen"
+                    name="churrosTen"
+                    min="0"
+                    value="0"
+                  />
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <aside class="flexOrderTotal">
+            <h2>Détails</h2>
+            <div class="gridOrderTotal">
+              <p>Sous-total:</p>
+              <p>0.00</p>
+              <p>Taxes:</p>
+              <p>0.00</p>
+              <p>Total:</p>
+              <p>0.00</p>
+            </div>
+            <input
+              type="submit"
+              id="confirmOrder"
+              value="Confirmé la commande"
+              href="#"
+            />
+          </aside>
+        </div>
+      </form>
+    </main>
+
+    <footer class="container">
+      <div class="footerTopDiv">
+        <p>Réalisé par : Lucas Minville</p>
+        <p class="mobileHidden">
+          Résaux Sociaux:
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            ><img src="img/facebook.png" alt="facebook Icon"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            ><img src="img/linkedin.png" alt="linkedin Icon"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            ><img src="img/twitter.png" alt="twitter Icon"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            ><img src="img/instagram.png" alt="instagram .Icon"
+          /></a>
+        </p>
+      </div>
+      <div>
+        <p>Intégration Web 1</p>
+        <p class="mobileHidden">Cégep de Trois-Rivière. Hiver 2025.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,556 @@
+* {
+     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(255, 241, 227);
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Tacos;
+    src: url(../font/TACOS-FONT.TTF);
+}
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../font/Roboto-Medium.ttf);
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.mobileVisible {
+    display: none;
+}
+
+
+/*************Header / Footer*************/    
+
+header h1 {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    background-image: url(../img/tortillas.jpg);
+    background-size: contain;
+}
+
+.styleOrderBtn {
+    border-radius: 30px;
+    box-shadow: black 2px 2px;
+    padding: 10px;
+    color: #fedebe;
+    background-color: #800000;
+}
+
+header a img {
+    max-width: 200px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    font-family: Tacos;
+    color: #800000;
+    text-decoration: none;
+    font-size: 2rem;
+    text-shadow: 1px 1px black;
+    
+}
+
+nav ul li a:hover {
+    font-family: Tacos;
+    color: #Fcb040;
+    text-decoration: underline;
+}
+
+nav ul li a:visited {
+    color: none;
+}
+
+.selected {
+    text-decoration: underline;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    padding-top: 10rem;
+}
+
+.footerTopDiv {
+border-bottom: #Fcb040 solid;
+}
+
+/************* index *************/
+
+.flexNomResto {
+    display: flex;
+    align-items: center;
+}
+.flexNomRestoImg{
+    width: 60%;
+    margin-left: 5rem;
+}
+
+h1,h2 {
+    font-family: Tacos;
+    font-size: 2rem;
+    color: #800000;
+}
+
+main .flexNomResto div div{
+    display: flex;
+    justify-content: space-evenly;
+}
+main .flexNomResto div div a {
+    background-color: #fedebe;
+    border: solid #800000;
+    border-radius:30px;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    color: #800000;
+    text-decoration: none;
+}
+
+main .flexNomResto div div a:hover {
+    border: solid #Fcb040;
+    color: #Fcb040;
+}
+main .flexNomResto div div a:visited{
+    color: none;
+}
+
+p {
+    font-family: Roboto-Medium;
+    color: #800000;
+}
+
+.gridSatisfaction{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    color: #800000;
+    font-family: Roboto-Medium;
+}
+
+.gridSatisfaction div {
+    border: solid #Fcb040 ;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.gridSatisfaction div div {
+    border: none;
+}
+
+h3 {
+    font-family: Tacos;
+    font-size: 1.5rem;
+    color: #800000;
+}
+
+.flexSatisfaction {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flexSatisfaction img {
+    border-radius: 50%;
+    max-width: 60px;
+    size: 10%;
+    margin-right: 1rem;
+}
+
+/*************Reservation*************/
+
+.gridReservation {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: baseline;
+}
+.gridReservation div {
+    padding: 1rem;
+}
+
+.gridReservation div input {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.gridItemInfo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+.gridItemComment {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.gridItemSubmit {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-items: center;  
+    width: 25%;
+    place-self: center;
+}
+
+.gridItemWhereToEat {
+padding: none;
+margin: none;
+}
+
+select {
+    width: 100%;
+    margin: 8px;
+    padding: 16px;
+}
+
+label {
+    font-family: Roboto-Medium;
+    color: #800000;
+}
+
+.gridReservation div input , select {
+    border-radius: 30px;
+    border: none;
+}
+
+.gridReservation div input[type="submit"] {
+    border: solid #800000;
+}
+
+.gridItemComment input {
+    height: 5rem;
+}
+
+.gridReservation div input[type="checkbox"] {
+    width: auto;
+}
+
+/*************Restaurant*************/
+
+.gridRestaurantImg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+ 
+.gridRestaurantImg img {
+    width: 100%;
+}
+
+.gridRestaurantImgRight {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.gridRestaurantImgLeft {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+}
+
+.flexRestaurantMapAddress {
+    display: flex;
+    align-items: center;
+}
+
+.flexRestaurantMapAddress div {
+    width: 50%;
+}
+
+.flexRestaurantMap {
+    width: 100%;
+}
+
+.flexRestaurantMapAddress div a {
+    font-family: Roboto-Medium;
+    color: #800000;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.flexRestaurantMapAddress div p {
+    font-family: Roboto-Medium;
+    color: #800000;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.flexRestaurantMapAddress div a:hover {
+    color: #Fcb040;
+    text-decoration: underline;
+}
+
+/*************Order*************/
+
+.flexOrder {
+    display: flex;
+}
+
+.flexOrderItemChoice {
+    width: 75%;
+}
+
+.flexOrderTotal {
+    width: 25%;
+    height: fit-content;
+    background-color: #Fcb040;
+    padding: .5rem 1rem 2rem 1rem;
+    border-radius: 20%;
+}
+
+.flexOrderTotal h2 {
+    text-align: center;
+}
+
+.gridOrderTotal {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-items: center ;
+}
+
+.gridTotal {
+    border-bottom: solid;
+}
+
+.flexOrderItemChoice table {
+    margin-bottom: 2rem;
+}
+
+.flexOrderItemChoice table th {
+    font-family: tacos;
+    color: #800000;
+
+}
+
+td {
+    font-family: Roboto-Medium;
+    color: #800000;
+}
+
+table {
+    width: 70%;
+}
+
+th, td {
+    text-align: start;
+    width: 33%;
+    min-width: 90px;
+    padding: 5px;
+}
+
+.tablePrice {
+    width: 33%;
+    min-width: 100px;
+}
+
+.flexOrderTotal input[type=submit] {
+    padding: 1rem;
+    border: #800000 solid;
+    color: #800000;
+    border-radius: 30px;
+    font-family: Roboto-Medium;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+td input[type="number"] {
+    border: none;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+/*************Media 1200px*************/
+
+@media screen and (max-width:1200px) {
+
+   /*************Header / Footer*************/ 
+   
+    header nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 1rem;
+        justify-items: center;
+    }
+   
+    header nav ul li {
+        margin: 10px 0 10px 0;
+        
+    }
+
+
+    /*************Index*************/
+
+    .flexNomRestoImg{
+        width: 40%;
+        margin-left: 5rem;
+    }
+
+}
+
+/*************Media 960px*************/
+
+@media screen and (max-width:960px) {
+
+    /*************Header / Footer*************/ 
+
+    header nav ul {
+        grid-template-columns: 1fr;
+    }
+
+    header nav ul li a {
+        font-size: 1.5rem;
+    }
+    
+    header {
+        height: 270px;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+/*************index*************/ 
+
+    .flexNomRestoImg {
+        display: none;
+    }
+
+    .gridSatisfaction{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+/*************Restaurant*************/ 
+
+.gridRestaurantImg {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.gridRestaurantImgRight {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.gridRestaurantImgLeft {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.flexRestaurantMapAddress {
+    flex-direction: column;
+}
+
+.flexRestaurantMapAddress div {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.flexRestaurantMapAddress div p {
+    text-align: center;
+}
+
+.flexRestaurantMapAddress .mediaMap960px{
+    display: inline;
+}
+
+/*************Commande*************/ 
+
+.flexOrder {
+    flex-direction: column;
+}
+
+.flexOrderTotal {
+    background-color: #fff1e3;
+    width: 100%;
+}
+
+.flexOrderItemChoice {
+    width: 100%;
+}
+
+.flexOrderItemChoice table {
+    width: 100%;
+}
+
+}
+
+/*************Media 570px*************/
+
+@media screen and (max-width:570px) {
+
+    .mobileHidden {
+        display: none;
+    }
+
+    .mobileVisible {
+        display: inline;
+    }
+
+
+    header a img {
+        max-width: 150px;;
+    }
+
+    header {
+        max-height: 170px;
+    }
+
+    /*************index*************/ 
+
+    .gridSatisfaction {
+        grid-template-columns: 1fr;
+
+    }
+
+    /*************Reservation*************/
+
+    .gridItemSubmit {
+        width: 80%;
+    }
+
+    /*************Restaurant*************/
+
+    .gridRestaurantImg {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .gridRestaurantImg img {
+        width: 47%;
+    }
+
+}
+

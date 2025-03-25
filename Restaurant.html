@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="icon" href="favicon.png  " />
+    <title>Restaurant Tacos</title>
+  </head>
+  <body>
+    <header>
+      <a href="Index.html">
+        <img src="img/Taco-logo.png" alt="Restaurant Tacos" />
+      </a>
+
+      <nav class="mobileVisible">
+        <img src="img/burger-bar.png" alt="burger" />
+      </nav>
+
+      <nav class="mobileHidden">
+        <ul>
+          <li><a href="Index.html">Acceuil</a></li>
+          <li><a href="Reservation.html">Réservation</a></li>
+          <li><a href="Restaurant.html" class="selected">Restaurant</a></li>
+          <li><a href="Commande.html" class="styleOrderBtn">Ma Commande</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Restaurant</h1>
+
+      <div class="gridRestaurantImg">
+        <img src="img/Restaurant-IMG/Restaurant1.jpg" alt="" />
+        <img src="img/Restaurant-IMG/Restaurant2.jpg" alt="" />
+        <img
+          src="img/Restaurant-IMG/Restaurant3.jpg"
+          alt=""
+          class="gridRestaurantImgRight"
+        />
+        <img
+          src="img/Restaurant-IMG/Restaurant4.jpg"
+          alt=""
+          class="gridRestaurantImgLeft"
+        />
+        <img src="img/Restaurant-IMG/Restaurant5.jpg" alt="" />
+        <img src="img/Restaurant-IMG/Restaurant6.jpg" alt="" />
+      </div>
+
+      <div class="flexRestaurantMapAddress">
+        <div>
+          <h2>Adresse</h2>
+          <p>1 Rue des Carrières, Québec, QC G1R 4P5</p>
+          <h2>Telephone</h2>
+          <a href="tel:1234567890">123 456-7890</a>
+          <h2>Couriel</h2>
+          <a href="mailto:fakemail@tacos.com">fakemail@tacos.com</a>
+        </div>
+        <div class="mediaMap960px">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5461.115004518116!2d-71.21150550123706!3d46.81302176168048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb895dc6bfd5ced%3A0xe1f8bb36daa428d!2sFairmont%20Le%20Ch%C3%A2teau%20Frontenac!5e0!3m2!1sen!2sca!4v1741880862281!5m2!1sen!2sca"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="flexRestaurantMap"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container">
+      <div class="footerTopDiv">
+        <p>Réalisé par : Lucas Minville</p>
+        <p class="mobileHidden">
+          Résaux Sociaux:
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            ><img src="img/facebook.png" alt="facebook Icon"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            ><img src="img/linkedin.png" alt="linkedin Icon"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            ><img src="img/twitter.png" alt="twitter Icon"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            ><img src="img/instagram.png" alt="instagram .Icon"
+          /></a>
+        </p>
+      </div>
+      <div>
+        <p>Intégration Web 1</p>
+        <p class="mobileHidden">Cégep de Trois-Rivière. Hiver 2025.</p>
+      </div>
+    </footer>
+  </body>
+</html>
